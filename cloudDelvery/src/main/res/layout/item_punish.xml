@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+	android:padding="10dp">
+	<TextView
+	    android:id="@+id/item_punish_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/text_l"
+	    android:text="禁闭30天"
+	    android:textColor="@color/black"/>
+	<TextView
+	    android:layout_below="@id/item_punish_title"
+	    android:id="@+id/item_punish_text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ff797b7a"
+	    android:textSize="@dimen/text_m"
+	    android:text="默哀分解哦激发看到弗拉芒地方你诶"/>
+	<TextView
+	    android:id="@+id/item_punish_date"
+	    android:layout_below="@id/item_punish_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ffbfbfbf"
+	    android:textSize="@dimen/text_s"
+	    android:layout_alignParentRight="true"
+	    android:text="2015-09-25"/>
+</RelativeLayout>

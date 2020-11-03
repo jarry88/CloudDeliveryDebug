@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./splashActivity/libs/umeng-analytics-v5.5.3.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/splashActivity/libs/umeng-analytics-v5.5.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

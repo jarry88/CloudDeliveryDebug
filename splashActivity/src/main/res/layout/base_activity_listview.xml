@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffeef0ef">
+
+    <com.base.widget.RTPullListView
+        android:dividerHeight="5dp"
+        android:id="@+id/order_detailList"
+        android:layout_width="match_parent"
+        android:divider="#ffc9c9c9"
+        android:layout_height="wrap_content" >
+    </com.base.widget.RTPullListView>
+</LinearLayout>

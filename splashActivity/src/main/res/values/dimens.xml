@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="titleBarHeight">48dp</dimen>
+    
+    <!-- 文本 -->
+    <dimen name="text_s">12sp</dimen>
+    <dimen name="text_m">16sp</dimen>
+    <dimen name="text_l">20sp</dimen>
+    <dimen name="text_titlebar">24sp</dimen>
+    
+    <dimen name="slidingmenu_offset">200dp</dimen>
+     <dimen name="shadowWidth">10dp</dimen>
+</resources>

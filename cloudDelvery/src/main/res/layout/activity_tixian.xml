@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可提现金额："
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tixianTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tixianET"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请收入提现金额"
+        android:inputType="number"
+        android:maxLines="6"
+        android:textColorHint="#ffbbb7b8"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_son"
+        android:padding="5dp"
+        android:text="确认提现"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_l" />
+
+</LinearLayout>

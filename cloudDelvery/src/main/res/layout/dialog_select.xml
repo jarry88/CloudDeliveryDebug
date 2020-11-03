@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="200dip"
+    android:background="@drawable/bg_common_dialog" >
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:text="@string/app_name"
+        android:textColor="#00A3E8"
+        android:textSize="19.0sp" />
+
+    <View
+        android:id="@+id/view_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/title_text"
+        android:background="#ffa0a0a0" />
+
+        <TextView
+            android:id="@+id/item_one"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_below="@+id/title_text"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="男"
+            android:textColor="#5E5E5E"
+            android:textSize="19.0sp" />
+
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/item_one"
+            android:background="#ffa0a0a0" />
+
+        <TextView
+            android:id="@+id/item_two"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_below="@+id/view_line2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="女"
+            android:textColor="#5E5E5E"
+            android:textSize="19.0sp" />
+
+</RelativeLayout>

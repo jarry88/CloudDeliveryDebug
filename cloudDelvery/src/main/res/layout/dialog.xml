@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.lw.clouddelivery.ui.xxxActivity" >
+    <LinearLayout 
+        android:background="@color/white"
+        android:id="@+id/dialog_order_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/base_titlebar_bg"
+                android:padding="10dp" >
+		
+                <LinearLayout
+                    android:id="@+id/qiangdan_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yuan"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/xxx_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="29"
+                        android:textColor="@color/white"
+                        android:textSize="26sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/xxx_distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qiangdan_price"
+                    android:layout_marginTop="5dp"
+                    android:text="9公里/1公斤/距你8.7公里"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_l" />
+                <ImageView
+                    android:id="@+id/qiangdan_icon_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="6dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/tkq_03"/>
+              
+            </RelativeLayout>
+	
+     <TextView
+         android:visibility="gone"
+         android:id="@+id/xxx_beizhu_tv"
+         android:padding="5dp"
+         android:background="#fffd0f0f"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/white"
+         android:textIsSelectable="@dimen/text_m"
+         android:text="备注:"/>
+          <TextView
+              android:visibility="gone"
+         android:id="@+id/xxx_value_tv"
+         android:padding="5dp"
+         android:background="#ff4b7aff"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/white"
+         android:textIsSelectable="@dimen/text_m"
+         android:text="价值申明:"/>
+                    <TextView
+              android:visibility="gone"
+         android:id="@+id/xxx_yuyue_tv"
+         android:padding="5dp"
+         android:background="#fffaea3d"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/white"
+         android:textIsSelectable="@dimen/text_m"
+         android:text="预约时间:"/>
+     <ScrollView
+         android:background="@color/white"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content">
+          <LinearLayout 
+             
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:padding="10dp">
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_margin="5dp">
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:src="@drawable/tk_03"/>
+                 <TextView 
+                     android:layout_marginLeft="10dp"
+                     android:id="@+id/xxx_start_tv"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/text_m"
+                     android:layout_gravity="center_vertical"
+                     android:textColor="@color/black"/>
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_margin="5dp">
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/tk_06"/>
+                 <TextView 
+                     android:layout_marginLeft="10dp"
+                     android:id="@+id/xxx_end_tv"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/text_m"
+                     android:textColor="@color/black"/>
+                 
+             </LinearLayout>
+             
+             <include
+                 android:layout_margin="10dp"
+                 layout="@layout/patch_order"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"/>
+             
+         </LinearLayout>
+     </ScrollView>
+        
+    </LinearLayout>
+     <ImageView
+         android:visibility="gone"
+         android:id="@+id/order_state_red_iv"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:src="@drawable/tkq_07"
+         android:layout_alignParentBottom="true"/>
+</RelativeLayout>

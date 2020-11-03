@@ -1,0 +1,34 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="base_titlebar_bg">#ff57B382</color>
+    <color name="base_titlebar_bg_press">#ff49a976</color>
+    <color name="base_titlebar_bg_enable">#ffcccccc</color>
+    
+        <!-- test -->
+    <color name="red">#ccff0000</color>
+    <color name="green">#cc00ff00</color>
+    <color name="blue">#cc0000ff</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff353535</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- common color -->
+    <color name="white_gray_1">#fff8f8f8</color>
+    <color name="white_gray_2">#ffdddddd</color>
+    <color name="divide_line">#cccccccc</color>
+    
+    <!-- 配色方案01 -->
+    <color name="bg_dark_blue">#ff2f333a</color>
+    <color name="fg_pink">#fffa5160</color>
+    <color name="white_translate">#99ffffff</color>
+    <color name="text_color_gray">#ff999999</color>
+    <color name="btn_green">#ff9ac600</color>
+    <color name="text_color_black">#ff333333</color>
+    <color name="bg_mainitem">#fff2f2f2</color>
+    <color name="divide_mainitem_top">#fff0f0f0</color>
+    <color name="divide_mainitem_bottom">#ffe3e3e3</color>
+    <color name="text_color_mainitem_time">#ff828282</color>
+    
+</resources>

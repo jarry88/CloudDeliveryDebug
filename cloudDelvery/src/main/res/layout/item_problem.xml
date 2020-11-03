@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ffbabbb3" />
+
+    <TextView
+        android:id="@+id/item_problem_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe1e1e1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="2015-07-07"
+        android:textColor="#ff797e78"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ffbabbb3" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffeeeeee"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/item_problem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1. 什么是飞毛腿奖"
+            android:textColor="#ff666666"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@id/item_problem_title"
+            android:layout_alignLeft="@id/item_problem_title"
+            android:id="@+id/item_problem_content"
+            android:textColor="#ff808080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金佛 i 金额我发 i 啊金额哦发 i 啊金额哦"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

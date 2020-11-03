@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/orderdetail_iv_bg"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/xq_03" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/circleState1TV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="已取消"
+                        android:textColor="@color/base_titlebar_bg"
+                        android:textSize="@dimen/text_l" />
+
+                    <TextView
+                        android:id="@+id/circleJuliTV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="19公里/一公斤"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_l" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/circleMoneyTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="49"
+                            android:textColor="@color/base_titlebar_bg"
+                            android:textSize="@dimen/text_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/元"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_l" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_mainitem" />
+
+            <TextView
+                android:id="@+id/orderdetail_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text=" 支付信息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_l" />
+
+            <TextView
+                android:id="@+id/orderdetail_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="在线支付"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_l" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_mainitem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text=" 物品信息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_l" />
+
+            <TextView
+                android:id="@+id/orderdetail_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="物品重量："
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_l" />
+
+            <TextView
+                android:id="@+id/orderdetail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="物品名称："
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_l" />
+
+            <TextView
+                android:id="@+id/orderdetail_beizhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="备注："
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_l" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_mainitem" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

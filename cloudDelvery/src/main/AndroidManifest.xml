@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lw.clouddelivery"
+    android:versionCode="12"
+    android:versionName="1.12"
+
+    >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <application
+        tools:replace="android:icon"
+        android:name="com.lw.clouddelivery.CloudDeliveryAPP"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.lw.clouddelivery.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lw.clouddelivery.ui.HomePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.xxxActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShareDialog" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.OrderListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lw.clouddelivery.ui.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.ChoiceVehicleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.MyYunSongActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.UserManualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.CashAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.MapDownloadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.YS_Step1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.AfterQiangdanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.ConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.showAccountDetailList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.ShouZhiListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.MessageListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.PunishListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.ReLocActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.ResetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.BankInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lw.clouddelivery.ui.HelpDetailActivity"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.lw.clouddelivery.ui.RegisterActivity"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name="com.lw.clouddelivery.ui.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name="com.lw.clouddelivery.ui.exam.ExamVoteSubmitActivity"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name="com.lw.clouddelivery.ui.train.TrainVoteSubmitActivity"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name="com.lw.clouddelivery.ui.TainExamActivity"
+            android:screenOrientation="portrait" />
+         
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- alipay sdk end -->
+
+        <activity
+            android:name="com.lw.clouddelivery.ui.TiXianActivity"
+            android:screenOrientation="portrait" />
+        
+       <activity
+            android:name="com.lw.clouddelivery.ui.ProblemListActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.lw.clouddelivery.Broadcase.OrderReceiver" >
+            <intent-filter>
+                <action android:name="com.lw.clouddelivery.Broadcase.OrderReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Polling Service -->
+        <service android:name="com.lw.clouddelivery.util.polling.PollingService" >
+            <intent-filter>
+                <action android:name="com.lw.clouddelivery.getorder" />
+            </intent-filter>
+        </service>
+
+        <!-- 百度地图 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="j29sw8FY34MvIxcorK4MGGUy3U9POWC4" />
+        
+        <!-- 友盟 -->
+        <meta-data android:value="582a9677b27b0a660100021d " android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+
+</manifest>

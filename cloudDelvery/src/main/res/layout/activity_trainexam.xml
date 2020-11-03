@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="先阅读培训资料，然后开始答题\n分数100分以上为达标"
+        android:textColor="@color/black_six"
+        android:textSize="14.5sp" />
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+         android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/traindata"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_btn_registercommit"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="培训资料"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_m" />
+
+    <Button
+        android:id="@+id/startexam"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_registercommit"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="开始考试"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_m" />
+
+</LinearLayout>

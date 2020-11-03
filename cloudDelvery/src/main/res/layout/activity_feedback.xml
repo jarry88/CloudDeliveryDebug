@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="请输入您的宝贵意见"
+        android:textColor="#ff676767"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="提醒： 壹步达中订单相关的反馈( 例如取件等待预约等问题)直接从首页进入未完成订单，在界面下方点击+按钮上的上报事件功能里反馈，客服会及时跟进处理。"
+        android:textColor="#ff9b9b9b"
+        android:textSize="14sp" />
+
+    <EditText
+        android:padding="5dp"
+        android:gravity="top"
+        android:id="@+id/feedback_et"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/green_frame_et" />
+
+    <Button
+        android:id="@+id/feedback_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/selector_btn_login"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_m" />
+
+</LinearLayout>

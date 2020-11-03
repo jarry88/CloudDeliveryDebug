@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <android.support.percent.PercentRelativeLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.lw.clouddelivery.widget.SquareCenterImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"
+                    app:layout_widthPercent="70%"
+                    android:background="@drawable/shape_circle_green" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="月结金额"
+                        android:textColor="#ff64756d"
+                        android:textSize="@dimen/text_1" />
+
+                    <TextView
+                        android:id="@+id/cashaccount_yuer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="0.00元"
+                        android:textColor="#ff64756d"
+                        android:textSize="@dimen/text_l" />
+                </LinearLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <com.lw.clouddelivery.widget.SquareCenterImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"
+                    app:layout_widthPercent="70%"
+                    android:background="@drawable/shape_circle_orange" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="可用金额"
+                        android:textColor="#ff826d5a"
+                        android:textSize="@dimen/text_1" />
+
+                    <TextView
+                        android:id="@+id/cashaccount_keyong"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="0.00元"
+                        android:textColor="#ff826d5a"
+                        android:textSize="@dimen/text_l" />
+                </LinearLayout>
+            </android.support.percent.PercentRelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/cashaccount_detailbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_btn_login"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="查看我的收支明细"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffcfcfcf"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="您的银行卡信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_s" />
+
+        <LinearLayout
+            android:id="@+id/bankinfo_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/yhk_03" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                   	android:id="@+id/bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="招商银行金陵支行" />
+
+                <TextView
+                    android:id="@+id/bankname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 银行卡"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_1" />
+
+                <TextView
+                    android:id="@+id/card_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="********1235"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffd2d2d2" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="15dip"
+	    android:layout_marginRight="25dip"
+	    android:layout_marginLeft="25dip"
+        android:orientation="horizontal">
+	    <Button
+            android:id="@+id/cashaccount_rechargebtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_btn_recharge"
+	        android:padding="8dp"
+	        android:text="充值"
+	        android:layout_marginRight="15dip"
+	        android:textColor="@color/white"
+	        android:textSize="18sp" />
+	    <Button
+	        android:enabled="false"
+            android:id="@+id/showTiXianBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_btn_login"
+	        android:padding="8dp"
+	        android:text="提现"
+	        android:layout_marginLeft="15dip"
+	        android:textColor="@color/white"
+	        android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/order_PayStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dqd_02" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:textSize="@dimen/text_l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/orderItem_FuhaoM"
+                            android:textColor="@color/txt_black" />
+                        <!-- 金钱 -->
+
+                        <TextView
+                            android:id="@+id/order_td_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_l"
+                            android:text="19"
+                            android:textColor="@color/txt_black" />
+
+                        <TextView
+                            android:textSize="@dimen/text_l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/orderItem_fuhaoZ"
+                            android:textColor="@color/txt_black" />
+
+                        <TextView
+                            android:textSize="@dimen/text_l"
+                            android:id="@+id/order_td_kmetre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            android:textColor="@color/txt_black" />
+                        <!-- 距离 -->
+
+                        <TextView
+                            android:textSize="@dimen/text_l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/orderItem_Distance"
+                            android:textColor="@color/txt_black" />
+
+                        <TextView
+                            android:textSize="@dimen/text_l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/orderItem_fuhaoZ"
+                            android:textColor="@color/txt_black" />
+                        <!-- 重量 -->
+
+                        <TextView
+                            android:textSize="@dimen/text_l"
+                            android:id="@+id/order_td_heavy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/txt_black" />
+
+                        <TextView
+                            android:textSize="@dimen/text_l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/orderItem_Height"
+                            android:textColor="@color/txt_black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/dqd_10" />
+
+                            <TextView
+                                android:id="@+id/startPlace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/orderItem_Strat"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#ffa1a1a3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp" >
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/dqd_13" />
+
+                            <TextView
+                                android:id="@+id/endPlace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/orderItem_Strat"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#ffa1a1a3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/item_order_today_state"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/dd_state_01" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/order_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/dqd_16" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#EEF0EF" />
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="1dp" >
+
+        <TextView
+            android:id="@+id/order_Num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DH12i913819028390123"
+            android:textColor="#ffb2b3b7" />
+
+        <TextView
+            android:id="@+id/order_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="12-10-21:13"
+            android:textColor="#ffb2b3b7" />
+    </RelativeLayout>
+
+  
+</LinearLayout>

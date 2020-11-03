@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppTheme" >
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+       <!-- 上拉分页，下拉刷新ListView -->
+     <style name="base_rt_progressbar">
+　　      <item name="android:indeterminateDrawable">@anim/anim_circle_128</item>
+　　      <item name="android:maxWidth">36dp</item>
+　　      <item name="android:maxHeight">36dp</item>
+    </style>
+</resources>

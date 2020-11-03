@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="80dp" >
+
+        <!-- 账号标题 和 账号输入框 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Pub_TittleStyle"
+                android:layout_margin="8dp"
+                android:text="@string/denglu_userNum"
+                android:textColor="#ff757575" />
+
+            <EditText
+                android:id="@+id/login_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/brg_wirte"
+                android:ems="10"
+                android:hint="请输入您的手机号"
+                android:numeric="integer"
+                android:phoneNumber="true"
+                android:textColorHint="#ffd3d3d3" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            layout="@layout/linelayout" />
+        <!-- 密码标题  和   密码输入框 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Pub_TittleStyle"
+                android:layout_margin="8dp"
+                android:text="@string/denglu_PwdNum"
+                android:textColor="#ff757575" />
+
+            <EditText
+                android:id="@+id/login_et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/brg_wirte"
+                android:hint="@string/hint_pwdnum"
+                android:inputType="textPassword"
+                android:textColorHint="#ffd3d3d3" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            layout="@layout/linelayout" />
+        <!-- 登录按钮style -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/shape_son"
+                android:padding="10dp"
+                android:text="@string/btn_login"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_l" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8dp" >
+
+            <TextView
+                android:id="@+id/login_findPwdTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/denglu_foundPwd"
+                android:textColor="@color/base_titlebar_bg" />
+        </LinearLayout>
+
+        <!-- 用户协议 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/denglu_userAgreement_ago"
+                android:textColor="#ffa0a0a0"
+                android:textSize="@dimen/text_s" />
+
+            <TextView
+                android:id="@+id/user_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/denglu_userAgreement"
+                android:textColor="@color/base_titlebar_bg"
+                android:textSize="@dimen/text_s" />
+        </LinearLayout>
+        <!-- 当前设备号 -->
+
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/denglu_EquipmentNum"
+                android:textColor="#ffa0a0a0"
+                android:textSize="@dimen/text_1" />
+
+            <TextView
+                android:id="@+id/equipmentNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffa0a0a0"
+                android:text="802485912345"
+                android:textSize="@dimen/text_1" />
+        </LinearLayout>
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="如果您不是壹步达专员，请点击"
+            android:textColor="@color/txt_black" />
+
+        <Button
+            android:id="@+id/btn_registrationUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:text="@string/btn_registrationUser"
+            android:textColor="@color/txt_black" />
+    </LinearLayout>
+
+</LinearLayout>

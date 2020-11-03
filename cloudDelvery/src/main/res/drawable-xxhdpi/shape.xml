@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 设置圆角弧形 -->
+    <corners android:radius="5dip" />
+	<solid android:color="@color/reg_btn"/>
+</shape>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="recharge_bg">#ffffa500</color>
+    <color name="recharge_bg_press">#ffffc125</color>
+    <color name="brg_tittle">#FBFBFB</color>
+    <color name="txt_tittle">#0DA3E2</color>
+    <color name="txt_blue">#0DA3E2</color>
+    <color name="home_btn_Background">#28B2EC</color>
+    <color name="txt_black">#323232</color>
+    <color name="brg_wirte">#FFFFFF</color>
+    <color name="txt_red">#FAA366</color>
+    <color name="btn_yellow">#FBB554</color>
+    <color name="title_bg">#57B382</color>
+    
+    
+    <color name="black_nine">#999999</color>
+    <color name="black_six">#666666</color>
+    <color name="black_three">#333333</color>
+    <color name="black">#000000</color>
+    
+    <color name="reg_btn">#FEBB50</color>
+    <color name="reg_btn_commit">#EC6A5C</color>
+    <color name="btn_pink">#EC6A5C</color> 
+ 	<color name="btn_pink_press">#EC6A50</color> 
+    <!-- 灰色线条 -->
+    <color name="line_grey">#ADADAD</color>
+    
+    <!--  -->
+    <color name="btn_registration">#F1F1F1</color>
+
+    <color name="divide">#fff0f0f0</color>
+    
+     <color name="vote_submit_orange">#ff864e</color>
+</resources>

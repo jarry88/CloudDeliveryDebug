@@ -1,0 +1,3 @@
+include ':splashActivity'
+include ':afinalLib_05_2'
+include ':cloudDelvery'

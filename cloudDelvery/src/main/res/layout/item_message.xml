@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/item_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上海市  30.5M"
+        android:textColor="#ff696768"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/item_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_download_cityname"
+        android:layout_alignLeft="@id/item_message_title"
+        android:layout_below="@id/item_message_title"
+        android:text="正在下载 16%"
+        android:textColor="#ff696768"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_message_text"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/nz_03" />
+
+        <TextView
+            android:id="@+id/item_message_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="2122"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffb4b4b4"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

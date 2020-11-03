@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff5f3f4"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/map_download_titleLeft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="城市列表"
+            android:textColor="@color/base_titlebar_bg"
+            android:textSize="@dimen/text_m" />
+
+        <TextView
+            android:id="@+id/map_download_titleRight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="下载管理"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_m" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffbfbfbf" />
+
+    <TextView
+        android:id="@+id/map_download_subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff5f3f4"
+        android:padding="5dp"
+        android:text="热门城市"
+        android:textColor="#ff969291" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffbfbfbf" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/download_city_lv"/>
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/downloading_lv"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffbfbfbf" />
+
+</LinearLayout>

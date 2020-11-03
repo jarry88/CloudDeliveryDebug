@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码： "
+            android:textColor="#ff656565"
+            android:textSize="@dimen/text_m" />
+
+        <EditText
+            android:id="@+id/resetpwd_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColorHint="#ffd3d3d3"
+            android:hint="请输入您的手机号码"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_m" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffadadad" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/resetpwd_t_sms"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码： "
+            android:textColor="#ff656565"
+            android:textSize="@dimen/text_m" />
+
+        <EditText
+            android:id="@+id/resetpwd_msCodeET"
+            android:hint="请输入短信验证码"
+            android:layout_toRightOf="@id/resetpwd_t_sms"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColorHint="#ffd3d3d3"
+            android:textSize="@dimen/text_m" />
+        <Button
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_btn_login"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:text="发送验证码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendsmsBtn"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffadadad" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码： "
+            android:textColor="#ff656565"
+            android:textSize="@dimen/text_m" />
+
+        <EditText
+            android:id="@+id/resetpwd_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColorHint="#ffd3d3d3"
+            android:hint="请输入您的新密码"
+            android:textSize="@dimen/text_m" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffadadad" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码： "
+            android:textColor="#ff656565"
+            android:textSize="@dimen/text_m" />
+
+        <EditText
+            android:id="@+id/resetpwd_confirmpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请确认您的新密码"
+            android:textColorHint="#ffd3d3d3"
+            android:textSize="@dimen/text_m" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffadadad" />
+
+    <Button
+        android:id="@+id/resetpwd_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/selector_btn_login"
+        android:padding="10dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_m" />
+
+</LinearLayout>

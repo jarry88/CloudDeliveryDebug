@@ -1,0 +1,6 @@
+# Project exclude paths
+/.gradle/
+/afinalLib_05_2/build/
+/afinalLib_05_2/build/intermediates/javac/debug/classes/
+/cloudDelvery/build/
+/splashActivity/build/
